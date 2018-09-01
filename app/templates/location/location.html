@@ -1,0 +1,100 @@
+<div class="stationpage" layout="row" ng-cloak>
+
+
+    <div layout="column" flex>
+
+
+        <div layout="column">
+            <h1 layout="row" layout-align="center"><strong>{{vm.currentCity}}</strong></h1>
+        </div>
+
+        <md-content layout="column" flex layout-padding>
+
+            <div layout="column" layout-align="stretch">
+
+                <table ng-table="vm.tableParams" class="table table-striped table-condensed table-responsive" show-filter="true"
+                       style="text-align: center;">
+                    <tr ng-repeat="row in $data">
+
+                        <td title="'Year'" filter="{ year: 'number'}" sortable="'year'">
+                            {{row.year}}
+                        </td>
+                        <td title="'Month'" filter="{ month: 'number'}" sortable="'month'">
+                            {{row.month}}
+                        </td>
+                        <td title="'&deg;C max'" filter="{ tmax: 'number'}" sortable="'tmax'">
+                            {{row.tmax}}
+                        </td>
+                        <td title="'&deg;C min'" filter="{ tmin: 'number'}" sortable="'tmin'">
+                            {{row.tmin}}
+                        </td>
+                        <td title="'Frost air'" filter="{ af: 'number'}" sortable="'af'">
+                            {{row.af}}
+                        </td>
+                        <td title="'Rain mm'" filter="{ rain: 'number'}" sortable="'rain'">
+                            {{row.rain}}
+                        </td>
+                        <td title="'Sun hours'" filter="{ sun: 'number'}" sortable="'sun'">
+                            {{row.sun}}
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+
+            <md-toolbar layout="row">
+                <div class="md-toolbar-tools" style="text-align: right;">
+
+                    <md-button ng-click="vm.toggleLeft()" class="md-raised">
+                        Weather UK Location: <strong>{{vm.currentCity}}</strong>
+                    </md-button>
+
+                </div>
+            </md-toolbar>
+
+        </md-content>
+
+    </div>
+
+
+    <md-sidenav layout="column" class="md-sidenav-left" md-component-id="left"
+
+                md-is-locked-open="$mdMedia('gt-sm')" md-whiteframe="4">
+
+        <md-toolbar>
+            <h1 class="md-toolbar-tools">Select location</h1>
+        </md-toolbar>
+
+        <md-content layout="column" flex>
+            <md-subheader class="md-primary">Open</md-subheader>
+            <div layout-padding>
+                <md-list flex>
+                    <md-list-item ng-repeat="(cityName, cityInfo) in vm.stations.open"
+                                  ui-sref="station({station: cityName, stationInfo:{city: cityName, state: 'open', url: cityInfo.url}})">
+                        <p> {{cityName}} </p>
+                    </md-list-item>
+                </md-list>
+            </div>
+
+            <md-subheader class="md-primary">Closed</md-subheader>
+            <div layout-padding>
+                <md-list flex layout-padding>
+                    <md-list-item ng-repeat="(cityName, cityInfo) in vm.stations.closed"
+                                  ui-sref="station({station: cityName, stationInfo:{city: cityName, state: 'closed', url: cityInfo.url}})">
+                        <p> {{cityName}} </p>
+                    </md-list-item>
+                </md-list>
+            </div>
+        </md-content>
+
+
+        <div class="md-toolbar-tools" flex>
+            <button class="md-button" ng-click="vm.toggleLeft()" hide-gt-sm type="button" aria-label="menu"
+                    style="min-width: 0;">
+            </button>
+        </div>
+    </md-sidenav>
+
+
+
+</div>

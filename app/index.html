@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="app" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="app" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bradford Weather</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.10/angular-material.min.css">
+    <link rel="stylesheet" href="content/css/app.css">
+    <link rel="stylesheet" href="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+</head>
+<body>
+
+<div ui-view></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+<script src="//unpkg.com/@uirouter/angularjs@1.0.20/release/angular-ui-router.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-messages.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.10/angular-material.min.js"></script>
+<script src="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.js"></script>
+
+<script src="app.js"></script>
+<script src="core/core.module.js"></script>
+<script src="core/core.config.js"></script>
+<script src="core/blocks/directives/directives.module.js"></script>
+<script src="core/blocks/filters/filters.module.js"></script>
+<script src="core/blocks/request/request.module.js"></script>
+<script src="core/blocks/services/services.module.js"></script>
+
+
+<!--services-->
+<script src="services/weather.service.js"></script>
+<script src="services/remote.service.js"></script>
+
+<!--factories-->
+<script src="factories/request.js"></script>
+<script src="factories/url.js"></script>
+
+<!--filters-->
+<script src="filters/example.filter.js"></script>
+
+<!--directives-->
+
+<!--controllers-->
+<script src="templates/location/location.controller.js"></script>
+
+
+</body>
+</html>

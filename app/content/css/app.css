@@ -1,0 +1,13 @@
+.layout-column{
+    background-color: #dfedf2;
+}
+table, th , td {
+    border-collapse: collapse;
+    padding: 5px;
+}
+.ng-table-pager{
+    text-align: center;
+}
+.md-toolbar-tools{
+    justify-content: right;
+}
