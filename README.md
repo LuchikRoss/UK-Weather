@@ -13,6 +13,7 @@ toggle in it
 
 & 
 set Access-Control-Expose-Headers:
+
 Access-Control-Allow-Origin
 
 &
