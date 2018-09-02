@@ -11,3 +11,7 @@ table, th , td {
 .md-toolbar-tools{
     justify-content: right;
 }
+md-toolbar h3{
+    margin-top: 10px;
+    width: 185px;
+}

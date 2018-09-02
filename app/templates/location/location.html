@@ -42,14 +42,18 @@
                 </table>
             </div>
 
-            <md-toolbar layout="row">
-                <div class="md-toolbar-tools" style="text-align: right;">
+            <md-divider></md-divider>
 
+            <md-toolbar layout="row">
+
+                <div class="md-toolbar-tools">
                     <md-button ng-click="vm.toggleLeft()" class="md-raised">
-                        Weather UK Location: <strong>{{vm.currentCity}}</strong>
+                        Location: <strong>{{vm.currentCity}}</strong>
                     </md-button>
 
                 </div>
+
+                <h3>UK Weather</h3>
             </md-toolbar>
 
         </md-content>
@@ -70,7 +74,7 @@
             <div layout-padding>
                 <md-list flex>
                     <md-list-item ng-repeat="(cityName, cityInfo) in vm.stations.open"
-                                  ui-sref="station({station: cityName, stationInfo:{city: cityName, state: 'open', url: cityInfo.url}})">
+                                  ui-sref="location({location: cityName, stationInfo:{city: cityName, state: 'open', url: cityInfo.url}})">
                         <p> {{cityName}} </p>
                     </md-list-item>
                 </md-list>
@@ -80,7 +84,7 @@
             <div layout-padding>
                 <md-list flex layout-padding>
                     <md-list-item ng-repeat="(cityName, cityInfo) in vm.stations.closed"
-                                  ui-sref="station({station: cityName, stationInfo:{city: cityName, state: 'closed', url: cityInfo.url}})">
+                                  ui-sref="location({location: cityName, stationInfo:{city: cityName, state: 'closed', url: cityInfo.url}})">
                         <p> {{cityName}} </p>
                     </md-list-item>
                 </md-list>
@@ -92,6 +96,7 @@
             <button class="md-button" ng-click="vm.toggleLeft()" hide-gt-sm type="button" aria-label="menu"
                     style="min-width: 0;">
             </button>
+
         </div>
     </md-sidenav>
 
