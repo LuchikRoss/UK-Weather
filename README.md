@@ -4,9 +4,9 @@ AngularJS
 ROSTYSLAV Naryzhniak
 <a href="https://luchikross.github.io/UK-Weather-AngularJS/app">public link</a>
 
-To run application please install this plugin of Google Chrome:
+To run application please install this plugin (Google Chrome):
 https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi,
-toggle it
+toggle in it
 
 & 
 
