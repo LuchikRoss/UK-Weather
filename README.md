@@ -2,7 +2,7 @@
 AngularJS
 # UK-Weather 
 ROSTYSLAV Naryzhniak
-<a href="https://luchikross.github.io/UK-Weather/app">UK-Weather</a>
+<a href="https://luchikross.github.io/UK-Weather/app">press link</a>
 
 To run application please install this plugin of Google Chrome:
 https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi
