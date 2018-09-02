@@ -17,7 +17,9 @@ Access-Control-Allow-Origin
 
 &
 set Intercepted URL's:
+
 https://www.metoffice.gov.uk/pub/data/weather/uk/climate/historic/historic.json
+
 https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/bradforddata.txt
 
 + add stations like:
