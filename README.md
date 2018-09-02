@@ -1,3 +1,4 @@
+
 AngularJS
 # UK-Weather 
 ROSTYSLAV Naryzhniak
@@ -6,9 +7,12 @@ ROSTYSLAV Naryzhniak
 To run application please install this plugin of Google Chrome:
 https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi
 toggle it
+
 & 
-set Intercepted URL's
-like
+
+set Intercepted URL's:
+https://www.metoffice.gov.uk/pub/data/weather/uk/climate/historic/historic.json
 https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/bradforddata.txt
-or
+
++ stations like:
 https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/aberporthdata.txt
