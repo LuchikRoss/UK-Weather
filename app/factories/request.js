@@ -39,7 +39,6 @@
 
         function request(method, url, data) {
 
-
             let config = {
                 dataType: 'json',
                 method: method,

@@ -19,8 +19,8 @@
                     controller: 'LocationController',
                     controllerAs: 'vm',
                     resolve: {
-                        data: getData,
-                        stations: getStations
+                        data: loadData,
+                        stations: loadStations
                     },
                     params : {
                         stationInfo : {city: 'Bradford', state: 'open', url: 'bradforddata.txt'}
@@ -28,13 +28,13 @@
                 });
         }
 
-        function getStations(getRemoteData) {
+        function loadStations(getRemoteData) {
             return getRemoteData.get();
         }
 
-        function getData($log, $q, $stateParams, stations, getRemoteData) {
+        function loadData($log, $q, $stateParams, stations, getRemoteData) {
             var stationInfo = $stateParams.stationInfo;
-            $log.debug(stationInfo);
+
             return $q.all({
                 title: stationInfo.city,
                 state: stationInfo.state,

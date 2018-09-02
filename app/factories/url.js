@@ -4,7 +4,6 @@
         .module('factory.url', [])
         .factory('url', url);
 
-
     url.$inject = [];
 
     function url() {
