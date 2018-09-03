@@ -17,4 +17,4 @@ set Access-Control-Expose-Headers:
 
 &
 check Intercepted URL pattern on default:
-*://*/*
+<b>(*://*/*)</b>
