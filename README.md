@@ -16,4 +16,4 @@ set Access-Control-Expose-Headers:
 <b>Access-Control-Allow-Origin</b>
 
 &
-check Intercepted URL pattern on default
+check Intercepted URL pattern on <b>default</b>
