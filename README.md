@@ -18,4 +18,4 @@ set Access-Control-Expose-Headers:
 &
 check Intercepted URL pattern on <b>default</b>
 
-& launch
+& launch it from <b>public link</b>
